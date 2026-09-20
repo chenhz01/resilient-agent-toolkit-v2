@@ -73,6 +73,19 @@ without a date) exit non-zero — CI-friendly.
   SILENT_TIMEOUT; silence is treated as failure, never success
 - **Numbered in dependency order** — 01 defines primitives, later files build on them
 
+## What is deliberately *not* in this repo
+
+This toolkit was distilled from an internal agent system with 100+ skills, and
+the split is intentional: **anything that touches personal memory stores stays
+private.** The clearest example is a tool that reads a personal memory log and
+proposes skill candidates from it — by our own rule, tools that read, derive
+from, or expose the shape of private memory never ship publicly, not even
+"anonymized". What ships here is only the generic machinery that runs *without*
+needing to know anything about you.
+
+Same logic applies to the private thresholds, prompt recipes, and production
+data of our own system — those live behind the collaboration channel below.
+
 ## Status
 
 All six pass their selftests; word_anchor additionally ran end-to-end with real

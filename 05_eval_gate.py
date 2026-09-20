@@ -4,7 +4,7 @@
 
 THE MECHANISM (from deepeval): pytest-style, metric-based evaluation with
 deterministic scoring — replace "I feel it got better" with before/after
-metric numbers. The valuable half for Zhengming is the REGRESSION GATE:
+metric numbers. The valuable half in practice is the REGRESSION GATE:
 every skill/output change runs the same metric suite; a run log (JSONL,
 append-only) makes before/after comparison mechanical.
 

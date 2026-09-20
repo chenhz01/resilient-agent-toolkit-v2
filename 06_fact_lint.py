@@ -107,15 +107,15 @@ def _selftest() -> int:
     check("T1 FRESH-1 catches undated claim", any(x["rule"] == "FRESH-1" for x in v))
 
     # legal (b): dated
-    v = lint_text("- 2026-09-20 完成沉默失败猎手的开发")
+    v = lint_text("- 2026-09-20 完成了第三版重构")
     check("T2 dated claim passes", not v)
 
     # legal (a): timeless tag
-    v = lint_text("- [timeless] 任何对外操作必须善伦明说才执行")
+    v = lint_text("- [timeless] 所有发布操作必须先经人工确认")
     check("T3 timeless tag passes", not v)
 
     # legal (c): pointer
-    v = lint_text("- 详见 rules/INDEX.md → 全量覆盖铁律")
+    v = lint_text("- 详见 docs/INDEX.md → 发布检查清单")
     check("T4 pointer passes", not v)
 
     # FRESH-2: rot-prone wording

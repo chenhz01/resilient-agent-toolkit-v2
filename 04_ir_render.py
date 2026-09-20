@@ -7,9 +7,8 @@ a schema validates it; a compiler renders deterministically. Same IR in ->
 byte-identical SVG out, forever. Plus delta(): compare two IRs and show
 added/removed/changed instead of eyeballing two images.
 
-WHY FOR ZHENGMING: zhengming-skill-graph and architecture outputs currently
-rely on hand-drawn/agent-drawn diagrams — unverifiable and unstable. This
-tool makes the diagram a pure function of the IR.
+WHY IT MATTERS: hand-drawn or model-drawn architecture diagrams are
+unverifiable and unstable. This tool makes the diagram a pure function of the IR.
 
 IR SCHEMA (nodes+edges, lane-based layout):
   {"title": str,
