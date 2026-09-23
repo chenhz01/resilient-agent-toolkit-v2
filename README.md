@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> **此仓已并入 [`adversarial-research-audit`](https://github.com/chenhz01/adversarial-research-audit)**（对抗验证思想并入旗舰）
+> 本仓转为只读归档，issue 与 star 请移步旗舰仓。
+
+---
+
 # resilient-agent-toolkit-v2
 
 **Six more zero-dependency Python tools from the "learn it, surpass it" pipeline.**
